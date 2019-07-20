@@ -1,4 +1,4 @@
-package com.trenchbl.blogger.bloggerjava;
+package com.trenchbl.blogger.bloggerjava.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
