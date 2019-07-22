@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Home Page</title>
@@ -7,6 +7,13 @@
 <body>
     <div>
         <p>To Be Improved</p>
+    </div>
+    <div th:each="currentPost : ${blogPosts}">
+        <p th:text="${currentPost.id}"></p>
+        <p th:text="${currentPost.title}"></p>
+        <br />
+        <p th:text="${currentPost.content}"></p>
+        <hr />
     </div>
 </body>
 </html>
